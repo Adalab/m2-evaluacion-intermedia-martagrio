@@ -18,6 +18,8 @@ console.log(`Mi número aleatorio es ${myRandomNumber}`);
 
 function showNumber() {
     const myNumber = parseInt(insert.value);
+    const myCounter = counter.innerHTML;
+    counter.innerHTML = parseInt(myCounter) + 1;
 
     if (myNumber === myRandomNumber) {
         tip.innerHTML = '¡HAS GANADO, CAMPEONA!';
