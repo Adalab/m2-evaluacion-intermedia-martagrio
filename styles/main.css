@@ -2,8 +2,38 @@
     background-color: grey;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
 }
 
-body::first--letter {
+body::first-letter {
+    text-transform: capitalize;
+}
+
+.title {
+    margin-bottom: 80px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.tips {
+    color: rgb(0, 153, 255);
+    border: 2px solid rgb(0, 153, 255);
+    padding: 20px auto;
+}
+
+.counter {
+    color: red;
+    position: fixed;
+    font-size: 3rem;
+    font-weight: bold;
+    right: 40px;
+    top: 40px;
+}
+
+.try--word {
+    font-style: italic;
     text-transform: capitalize;
 }

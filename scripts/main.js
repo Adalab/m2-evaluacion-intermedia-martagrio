@@ -12,7 +12,6 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
 }
 
-// Anda, chacho, píntame en la consola un número random hasta 100;
 const myRandomNumber = getRandomNumber(100);
 
 console.log(`Mi número aleatorio es ${myRandomNumber}`);
