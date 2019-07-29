@@ -1,0 +1,9 @@
+.page {
+    background-color: grey;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::first--letter {
+    text-transform: capitalize;
+}
