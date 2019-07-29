@@ -5,12 +5,24 @@
     margin: 40px;
 }
 
-body::first-letter {
+.title {
+    margin-bottom: 80px;
+}
+
+.title::first-letter {
     text-transform: capitalize;
 }
 
-.title {
-    margin-bottom: 80px;
+.text::first-letter {
+    text-transform: capitalize;
+}
+
+.btn::first-letter {
+    text-transform: capitalize;
+}
+
+.tips::first-letter {
+    text-transform: capitalize;
 }
 
 .btn {
