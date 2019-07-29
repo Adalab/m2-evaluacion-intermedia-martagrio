@@ -3,6 +3,7 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 40px;
+    height: 100vh;
 }
 
 .title {
@@ -25,15 +26,21 @@
     text-transform: capitalize;
 }
 
+.number {
+    width: 181px;
+}
+
 .btn {
     margin-top: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    width: 181px;
 }
 
 .tips {
-    color: rgb(0, 153, 255);
-    border: 2px solid rgb(0, 153, 255);
+    margin-top: 150px;
     padding: 20px auto;
+    color: rgb(0, 110, 255);
+    border: 2px solid rgb(0, 110, 255);
 }
 
 .counter {
@@ -42,7 +49,7 @@
     font-size: 3rem;
     font-weight: bold;
     right: 40px;
-    top: 40px;
+    top: 30px;
 }
 
 .try--word {
