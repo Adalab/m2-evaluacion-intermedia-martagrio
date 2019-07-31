@@ -1,7 +1,13 @@
 .page {
     background-color: grey;
+    background-image: url('https://www.sciencenews.org/sites/default/files/2018/05/main/articles/050718_EC_numbers_feat.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
     margin: 40px;
     height: 100vh;
 }
@@ -14,20 +20,22 @@
     text-transform: capitalize;
 }
 
-.text::first-letter {
-    text-transform: capitalize;
+.input__box {
+    margin: 20px 0;
 }
 
-.btn::first-letter {
-    text-transform: capitalize;
+.text {
+    font-weight: bold;
 }
 
+.btn,
 .tips::first-letter {
     text-transform: capitalize;
 }
 
 .number {
     width: 181px;
+    text-align: center;
 }
 
 .btn {
@@ -36,6 +44,8 @@
     width: 181px;
     border: none;
     border-radius: 3px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .tips {
@@ -57,4 +67,9 @@
 .try--word {
     font-style: italic;
     text-transform: capitalize;
+}
+
+.tips:hover {
+    color: yellow;
+    border-color: yellow;
 }
