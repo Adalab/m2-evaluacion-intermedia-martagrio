@@ -37,6 +37,10 @@
 .number {
     width: 181px;
     text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    color: greenyellow;
+    font-weight: bold;
 }
 
 .btn,
@@ -53,22 +57,31 @@
 .reset--btn {
     color: red;
     border: 1px solid red;
+    transition: color ease 1s, border-color ease 1s, background-color ease 1s, transfrom ease 0.5s;
+}
+
+.reset--btn:hover {
+    color: white;
+    border-color: white;
+    background-color: red;
+    transform: scale(1.5);
 }
 
 .tips {
     margin-top: 150px;
     padding: 20px auto;
-    color: rgb(0, 110, 255);
+    font-weight: bold;
+    color: rgb(235, 241, 241);
     border: 2px solid rgb(0, 110, 255);
 }
 
 .counter {
     color: red;
     position: fixed;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     right: 40px;
-    top: 30px;
+    top: 40px;
 }
 
 .try--word {
