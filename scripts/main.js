@@ -4,6 +4,8 @@ const counter = document.querySelector('.counter');
 const insert = document.querySelector('.number');
 const button = document.querySelector('.btn');
 const tip = document.querySelector('.tips');
+const initialTip = tip.innerHTML;
+const reset = document.querySelector('.reset--btn');
 
 let clicks = 0;
 
@@ -11,7 +13,7 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
 }
 
-const myRandomNumber = getRandomNumber(100);
+let myRandomNumber = getRandomNumber(100);
 
 console.log(`Mi número aleatorio es ${myRandomNumber}`);
 
@@ -23,7 +25,7 @@ function showNumber() {
     if (myNumber === myRandomNumber) {
         tip.innerHTML = '¡HAS GANADO, CAMPEONA!';
 
-    } else if (myNumber !== Number) {
+    } else if (isNaN(myNumber) === true) {
         tip.innerHTML = "No has introducido ningún número, por favor, introduce un número del 0 al 100";
 
     } else if (myNumber > 100 || myNumber < 0) {
@@ -49,3 +51,16 @@ function preshEnter(event) {
 }
 
 window.addEventListener('keydown', preshEnter);
+
+console.log(tip.innerHTML);
+
+function cleanAll() {
+    counter.innerHTML = 0;
+    insert.value = '';
+    myRandomNumber = getRandomNumber(100);
+    console.log(`Mi número aleatorio es ${myRandomNumber}`);
+    console.log(tip.innerHTML)
+    tip.innerHTML = initialTip;
+}
+
+reset.addEventListener('click', cleanAll)

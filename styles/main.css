@@ -29,6 +29,7 @@
 }
 
 .btn,
+.reset--btn,
 .tips::first-letter {
     text-transform: capitalize;
 }
@@ -38,7 +39,8 @@
     text-align: center;
 }
 
-.btn {
+.btn,
+.reset--btn {
     margin-top: 20px;
     margin-bottom: 100px;
     width: 181px;
@@ -46,6 +48,11 @@
     border-radius: 3px;
     font-weight: bold;
     font-size: 20px;
+}
+
+.reset--btn {
+    color: red;
+    border: 1px solid red;
 }
 
 .tips {
